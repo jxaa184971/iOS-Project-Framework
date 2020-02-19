@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  IOSProjectFramework
+//
+//  Created by 黄一川 on 2020/2/19.
+//  Copyright © 2020 hyc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Masonry/Masonry.h>
+#import <JSONModel/JSONModel.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import <YYCache/YYCache.h>
+#import <AFNetworking/AFNetworking.h>
+
+#import "PPNetworkHelper.h"
+
+#endif /* PrefixHeader_pch */

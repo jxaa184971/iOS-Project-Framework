@@ -12,7 +12,8 @@ inhibit_all_warnings!
 target 'IOSProjectFramework' do 
     pod 'AFNetworking', '3.2.1' 
     #pod 'YYKit', '1.0.9'
-    pod 'YYKit', :path => '/Users/hyc/Documents/YYKit'
+    #pod 'YYKit', :path => '/Users/hyc/Documents/YYKit'
+    pod 'YYCache', '1.0.4'
     pod 'JSONModel', '1.8.0'
     pod 'Masonry', '1.1.0'
     pod 'MBProgressHUD', '1.2.0'

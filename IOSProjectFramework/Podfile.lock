@@ -18,9 +18,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.3.1)
-  - YYKit (1.1.0):
-    - YYKit/no-arc (= 1.1.0)
-  - YYKit/no-arc (1.1.0)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
@@ -28,7 +26,7 @@ DEPENDENCIES:
   - Masonry (= 1.1.0)
   - MBProgressHUD (= 1.2.0)
   - MJRefresh (= 3.3.1)
-  - YYKit (from `/Users/hyc/Documents/YYKit`)
+  - YYCache
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
@@ -37,10 +35,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
-
-EXTERNAL SOURCES:
-  YYKit:
-    :path: "/Users/hyc/Documents/YYKit"
+    - YYCache
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -48,8 +43,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  YYKit: 9943a29d79b33ca2536e933d4bc206ef47716d27
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: fa4cd2d879525d5cc47368cacb0689567456f6c9
+PODFILE CHECKSUM: e4f62f245ba72842f39a1604b8b03f357e7dd93a
 
 COCOAPODS: 1.8.4
