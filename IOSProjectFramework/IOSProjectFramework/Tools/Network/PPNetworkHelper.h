@@ -47,6 +47,19 @@ typedef NS_ENUM(NSUInteger, PPResponseSerializer) {
     PPResponseSerializerHTTP,
 };
 
+typedef NS_ENUM(NSUInteger, PPRequestMethod) {
+    /// GET请求
+    PPRequestMethodGET,
+    /// POST请求
+    PPRequestMethodPOST,
+    /// PUT请求
+    PPRequestMethodPUT,
+    /// PATCH请求
+    PPRequestMethodPATCH,
+    /// DELETE请求
+    PPRequestMethodDELETE,
+};
+
 /// 请求成功的Block
 typedef void(^PPHttpRequestSuccess)(id responseObject);
 
@@ -82,12 +95,6 @@ typedef void(^PPNetworkStatus)(PPNetworkStatusType status);
 
 /// 取消指定URL的HTTP请求
 + (void)cancelRequestWithURL:(NSString *)URL;
-
-/// 开启日志打印 (Debug级别)
-+ (void)openLog;
-
-/// 关闭日志打印,默认关闭
-+ (void)closeLog;
 
 
 /**
@@ -151,6 +158,51 @@ typedef void(^PPNetworkStatus)(PPNetworkStatusType status);
 + (__kindof NSURLSessionTask *)POST:(NSString *)URL
                          parameters:(id)parameters
                       responseCache:(PPHttpRequestCache)responseCache
+                            success:(PPHttpRequestSuccess)success
+                            failure:(PPHttpRequestFailed)failure;
+
+/**
+ *  PUT请求,无缓存
+ *
+ *  @param URL        请求地址
+ *  @param parameters 请求参数
+ *  @param success    请求成功的回调
+ *  @param failure    请求失败的回调
+ *
+ *  @return 返回的对象可取消请求,调用cancel方法
+ */
++ (__kindof NSURLSessionTask *)PUT:(NSString *)URL
+                         parameters:(id)parameters
+                            success:(PPHttpRequestSuccess)success
+                            failure:(PPHttpRequestFailed)failure;
+
+/**
+ *  PATCH请求,无缓存
+ *
+ *  @param URL        请求地址
+ *  @param parameters 请求参数
+ *  @param success    请求成功的回调
+ *  @param failure    请求失败的回调
+ *
+ *  @return 返回的对象可取消请求,调用cancel方法
+ */
++ (__kindof NSURLSessionTask *)PATCH:(NSString *)URL
+                         parameters:(id)parameters
+                            success:(PPHttpRequestSuccess)success
+                            failure:(PPHttpRequestFailed)failure;
+
+/**
+ *  DELETE请求,无缓存
+ *
+ *  @param URL        请求地址
+ *  @param parameters 请求参数
+ *  @param success    请求成功的回调
+ *  @param failure    请求失败的回调
+ *
+ *  @return 返回的对象可取消请求,调用cancel方法
+ */
++ (__kindof NSURLSessionTask *)DELETE:(NSString *)URL
+                         parameters:(id)parameters
                             success:(PPHttpRequestSuccess)success
                             failure:(PPHttpRequestFailed)failure;
 
