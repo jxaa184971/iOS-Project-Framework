@@ -127,6 +127,7 @@
 				0C7E4B7F23CC95E500048E33 /* Sources */,
 				0C7E4B8023CC95E500048E33 /* Frameworks */,
 				0C7E4B8123CC95E500048E33 /* Resources */,
+				8F97A56C87BEF516EC4CB2F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8F97A56C87BEF516EC4CB2F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CC971BE7DD3896DB59802FD5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -14,17 +14,42 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - JSONModel (1.8.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.3.1)
+  - YYKit (1.1.0):
+    - YYKit/no-arc (= 1.1.0)
+  - YYKit/no-arc (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
+  - JSONModel (= 1.8.0)
+  - Masonry (= 1.1.0)
+  - MBProgressHUD (= 1.2.0)
+  - MJRefresh (= 3.3.1)
+  - YYKit (from `/Users/hyc/Documents/YYKit`)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
+    - JSONModel
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  YYKit:
+    :path: "/Users/hyc/Documents/YYKit"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  YYKit: 9943a29d79b33ca2536e933d4bc206ef47716d27
 
-PODFILE CHECKSUM: 6d4faae6f221c578afd35dd483d207b04b8e6167
+PODFILE CHECKSUM: fa4cd2d879525d5cc47368cacb0689567456f6c9
 
 COCOAPODS: 1.8.4
