@@ -15,6 +15,7 @@
 		0C7E4B9323CC95E600048E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E4B9223CC95E600048E33 /* Assets.xcassets */; };
 		0C7E4B9623CC95E600048E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7E4B9423CC95E600048E33 /* LaunchScreen.storyboard */; };
 		0C7E4B9923CC95E600048E33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E4B9823CC95E600048E33 /* main.m */; };
+		0CD77D2023FFC01B0069407F /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD77D1F23FFC01B0069407F /* CommonTool.m */; };
 		3B27CF751ECBB5D9993C15C6 /* libPods-IOSProjectFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435A5DBB349F20F3B222D90 /* libPods-IOSProjectFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,8 @@
 		0C1C403723FCD81C00E44F64 /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
 		0C1C403823FCD81C00E44F64 /* PPNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkHelper.m; sourceTree = "<group>"; };
 		0C1C403C23FCDB7100E44F64 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0C1C403E23FD2F8300E44F64 /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
+		0C1C403F23FD2FB800E44F64 /* SystemConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConfig.h; sourceTree = "<group>"; };
 		0C7E4B8323CC95E500048E33 /* IOSProjectFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSProjectFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7E4B8623CC95E500048E33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C7E4B8723CC95E500048E33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +37,8 @@
 		0C7E4B9523CC95E600048E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C7E4B9723CC95E600048E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7E4B9823CC95E600048E33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CD77D1E23FFC01B0069407F /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		0CD77D1F23FFC01B0069407F /* CommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		2CB8C0C8A80B7210CB167211 /* Pods-IOSProjectFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSProjectFramework.debug.xcconfig"; path = "Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		3435A5DBB349F20F3B222D90 /* libPods-IOSProjectFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSProjectFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93C3D711EADF9B6C458EAE4 /* Pods-IOSProjectFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSProjectFramework.release.xcconfig"; path = "Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +70,8 @@
 		0C12BBBE23FA6B1600BEB7F0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0CD77D1D23FFBFF20069407F /* Common */,
+				0C1C403D23FD2F5400E44F64 /* Configuration */,
 				0C1C403B23FCDB5B00E44F64 /* PCH */,
 				0C12BBBD23FA382100BEB7F0 /* Network */,
 			);
@@ -77,6 +84,15 @@
 				0C1C403C23FCDB7100E44F64 /* PrefixHeader.pch */,
 			);
 			path = PCH;
+			sourceTree = "<group>";
+		};
+		0C1C403D23FD2F5400E44F64 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0C1C403E23FD2F8300E44F64 /* NetworkConfig.h */,
+				0C1C403F23FD2FB800E44F64 /* SystemConfig.h */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		0C7E4B7A23CC95E500048E33 = {
@@ -112,6 +128,15 @@
 				0C7E4B9823CC95E600048E33 /* main.m */,
 			);
 			path = IOSProjectFramework;
+			sourceTree = "<group>";
+		};
+		0CD77D1D23FFBFF20069407F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0CD77D1E23FFC01B0069407F /* CommonTool.h */,
+				0CD77D1F23FFC01B0069407F /* CommonTool.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		4D063584FB0151F9C1433669 /* Frameworks */ = {
@@ -249,6 +274,7 @@
 				0C7E4B8E23CC95E500048E33 /* ViewController.m in Sources */,
 				0C7E4B8823CC95E500048E33 /* AppDelegate.m in Sources */,
 				0C7E4B9923CC95E600048E33 /* main.m in Sources */,
+				0CD77D2023FFC01B0069407F /* CommonTool.m in Sources */,
 				0C1C403A23FCD81D00E44F64 /* PPNetworkHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +424,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyc.IOSProjectFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,6 +444,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyc.IOSProjectFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

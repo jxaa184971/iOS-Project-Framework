@@ -19,6 +19,18 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
+    
+    
+    NSString *token = @"token402591509343645696";
+    
+    
+    
+    NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@1003, @"id", nil];
+    [PPNetworkHelper POST:kTestURL parameters:param success:^(id responseObject) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 

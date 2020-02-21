@@ -173,6 +173,7 @@ static AFHTTPSessionManager *_sessionManager;
         failure ? failure(error) : nil;
     };
     
+    [self updateHTTPRequesetHeaders];
     NSURLSessionTask *sessionTask;
     switch (method) {
         case PPRequestMethodGET:
@@ -217,6 +218,12 @@ static AFHTTPSessionManager *_sessionManager;
     sessionTask ? [[self allSessionTask] addObject:sessionTask] : nil ;
     
     return sessionTask;
+}
+
+#pragma mark - 所有请求发送前header处理
++ (void)updateHTTPRequesetHeaders {
+    NSString *timeStampStr = getCurrentTimestampStr();
+    [self setValue:timeStampStr forHTTPHeaderField:@"timestamp"];
 }
 
 #pragma mark - 上传文件
@@ -370,11 +377,20 @@ static AFHTTPSessionManager *_sessionManager;
  *  原理参考地址:http://www.jianshu.com/p/5969bbb4af9f
  */
 + (void)initialize {
-    _sessionManager = [AFHTTPSessionManager manager];
+    _sessionManager = [[AFHTTPSessionManager manager] initWithBaseURL:[NSURL URLWithString:kBaseURL]];
     _sessionManager.requestSerializer.timeoutInterval = 30.f;
     _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*", nil];
+    [self setInitialHttpRequestHeaders];
+    
     // 打开状态栏的等待菊花
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+}
+
+/// 初始化所有请求中需携带的header
++ (void)setInitialHttpRequestHeaders {
+    NSDictionary *bundleInfo = [[NSBundle mainBundle] infoDictionary];
+    NSString *appVersion = [bundleInfo valueForKey:@"CFBundleShortVersionString"];
+    [self setValue:appVersion forHTTPHeaderField:@"appVersion"];
 }
 
 #pragma mark - 重置AFHTTPSessionManager相关属性
