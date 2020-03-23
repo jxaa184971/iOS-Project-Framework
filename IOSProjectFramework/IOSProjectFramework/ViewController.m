@@ -18,11 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor redColor];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     NSString *token = @"token402591509343645696";
-    
     
     
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@1003, @"id", nil];

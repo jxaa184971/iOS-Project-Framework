@@ -10,24 +10,15 @@
 
 #pragma mark - 宏
 
-//计算颜色
-#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
-#define RGB_A(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-#define RGB_COLOR_HEX(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
-
 //弱引用
 #define kWeakSelf __weak __typeof(self) weakSelf = self;
-
-//屏幕宽高
-#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
-#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 //keyWindow
 #define KEY_WINDOW [UIApplication sharedApplication].keyWindow
 
 //屏幕适配
-#define kAutoScale(num) ((SCREEN_WIDTH/375)*num)
-#define AUTO_SCALE SCREEN_WIDTH/375.0
+#define kAutoScale(num) ((SCREEN_WIDTH / 375.0) * num)
+#define AUTO_SCALE SCREEN_WIDTH / 375.0
 
 #pragma mark 全局方法
 /**

@@ -15,8 +15,9 @@
 #import <JSONModel/JSONModel.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <MJRefresh/MJRefresh.h>
-#import <YYCache/YYCache.h>
+#import <YYKit/YYKit.h>
 #import <AFNetworking/AFNetworking.h>
+#import <CYLTabBarController/CYLTabBarController.h>
 
 #import "CommonTool.h"
 #import "SystemConfig.h"

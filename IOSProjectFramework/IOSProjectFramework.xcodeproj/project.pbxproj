@@ -17,6 +17,8 @@
 		0C7E4B9923CC95E600048E33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7E4B9823CC95E600048E33 /* main.m */; };
 		0CD77D2023FFC01B0069407F /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD77D1F23FFC01B0069407F /* CommonTool.m */; };
 		3B27CF751ECBB5D9993C15C6 /* libPods-IOSProjectFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435A5DBB349F20F3B222D90 /* libPods-IOSProjectFramework.a */; };
+		BF5B222E2421BC6400806D9D /* AppDelegate+TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5B222D2421BC6400806D9D /* AppDelegate+TabBar.m */; };
+		BF5B22332421FAAC00806D9D /* TabBarPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5B22322421FAAC00806D9D /* TabBarPlusButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		2CB8C0C8A80B7210CB167211 /* Pods-IOSProjectFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSProjectFramework.debug.xcconfig"; path = "Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		3435A5DBB349F20F3B222D90 /* libPods-IOSProjectFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSProjectFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93C3D711EADF9B6C458EAE4 /* Pods-IOSProjectFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSProjectFramework.release.xcconfig"; path = "Target Support Files/Pods-IOSProjectFramework/Pods-IOSProjectFramework.release.xcconfig"; sourceTree = "<group>"; };
+		BF5B222C2421BC6400806D9D /* AppDelegate+TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+TabBar.h"; sourceTree = "<group>"; };
+		BF5B222D2421BC6400806D9D /* AppDelegate+TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+TabBar.m"; sourceTree = "<group>"; };
+		BF5B22312421FAAC00806D9D /* TabBarPlusButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarPlusButton.h; sourceTree = "<group>"; };
+		BF5B22322421FAAC00806D9D /* TabBarPlusButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarPlusButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		0C12BBBE23FA6B1600BEB7F0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				BF5B222F2421FA3C00806D9D /* Base */,
 				0CD77D1D23FFBFF20069407F /* Common */,
 				0C1C403D23FD2F5400E44F64 /* Configuration */,
 				0C1C403B23FCDB5B00E44F64 /* PCH */,
@@ -119,6 +126,8 @@
 				0C12BBBE23FA6B1600BEB7F0 /* Tools */,
 				0C7E4B8623CC95E500048E33 /* AppDelegate.h */,
 				0C7E4B8723CC95E500048E33 /* AppDelegate.m */,
+				BF5B222C2421BC6400806D9D /* AppDelegate+TabBar.h */,
+				BF5B222D2421BC6400806D9D /* AppDelegate+TabBar.m */,
 				0C7E4B8C23CC95E500048E33 /* ViewController.h */,
 				0C7E4B8D23CC95E500048E33 /* ViewController.m */,
 				0C7E4B8F23CC95E500048E33 /* Main.storyboard */,
@@ -145,6 +154,15 @@
 				3435A5DBB349F20F3B222D90 /* libPods-IOSProjectFramework.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF5B222F2421FA3C00806D9D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BF5B22312421FAAC00806D9D /* TabBarPlusButton.h */,
+				BF5B22322421FAAC00806D9D /* TabBarPlusButton.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		ED6BD06CDD02D43B0EB04310 /* Pods */ = {
@@ -271,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1C403923FCD81D00E44F64 /* PPNetworkCache.m in Sources */,
+				BF5B22332421FAAC00806D9D /* TabBarPlusButton.m in Sources */,
+				BF5B222E2421BC6400806D9D /* AppDelegate+TabBar.m in Sources */,
 				0C7E4B8E23CC95E500048E33 /* ViewController.m in Sources */,
 				0C7E4B8823CC95E500048E33 /* AppDelegate.m in Sources */,
 				0C7E4B9923CC95E600048E33 /* main.m in Sources */,

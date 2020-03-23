@@ -14,37 +14,45 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.28.5):
+    - CYLTabBarController/Core (= 1.28.5)
+  - CYLTabBarController/Core (1.28.5)
   - JSONModel (1.8.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.3.1)
-  - YYCache (1.0.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
+  - CYLTabBarController (~> 1.28.0)
   - JSONModel (= 1.8.0)
   - Masonry (= 1.1.0)
   - MBProgressHUD (= 1.2.0)
   - MJRefresh (= 3.3.1)
-  - YYCache
+  - YYKit (= 1.0.9)
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
+    - CYLTabBarController
     - JSONModel
     - Masonry
     - MBProgressHUD
     - MJRefresh
-    - YYCache
+    - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: e4f62f245ba72842f39a1604b8b03f357e7dd93a
+PODFILE CHECKSUM: 7d0104922210fefca2376eee5bd6388e227dd816
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0.beta.2
